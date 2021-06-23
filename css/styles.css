@@ -191,6 +191,9 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .restaurantstitle {
   padding: 50px 0 10px 22px;
@@ -214,6 +217,7 @@ h1 {
     margin-right: 25px;
   }
 }
+
 .restaurantscarte img {
   width: 100%;
   max-height: 175px;
@@ -351,8 +355,10 @@ h1 {
     opacity: 1;
   }
 }
+
 .carteglobalentrees {
-  animation: fadein 2s;
+  animation: fadein 10s;
+  transition: 5s;
 }
 @media screen and (min-width: 1140px) {
   .carteglobalentrees {
@@ -396,6 +402,8 @@ h1 {
   .carteglobalcontenu {
     max-width: none;
   }
+
+
 }
 .carteglobalcontenudish {
   width: 350px;
@@ -593,4 +601,23 @@ footer .footerlogo {
   margin-bottom: 15px;
 }
 
-/*# sourceMappingURL=style.css.map */
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+  .carteglobalcontenu {
+    max-width: none;
+  }
+
+
+.fonctionchoix {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.fonction {
+  
+  display: block;
+  
+}
+
+}
+
