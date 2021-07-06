@@ -623,10 +623,7 @@ footer .footerlogo {
 }
 
 @media screen and (min-width: 600px) and (max-width: 1300px) {
-  .carteglobalcontenu {
-    max-width: none;
-  }
-
+ 
 
 .fonctionchoix {
   margin-left: auto;
