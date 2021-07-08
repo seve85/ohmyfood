@@ -334,7 +334,7 @@ h1 {
   align-self: flex-end;
 }
 .carte h2 {
-  margin-bottom: 35gitpx;
+  margin-bottom: 35px;
 }
 
 .carte .heart {
@@ -623,7 +623,10 @@ footer .footerlogo {
 }
 
 @media screen and (min-width: 600px) and (max-width: 1300px) {
- 
+  .carteglobalcontenu {
+    max-width: none;
+  }
+
 
 .fonctionchoix {
   margin-left: auto;
