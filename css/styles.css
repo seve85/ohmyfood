@@ -196,7 +196,7 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 300px;
+  padding: 30s0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -273,7 +273,7 @@ h1 {
 .restaurantscarte .restaurantscartecontent .heart {
   position: absolute;
   right: 20px;
-  top: 1;
+  top: 1px;
 }
 .restaurantscarte .restaurantscartecontent .heart__1 {
   position: relative;
