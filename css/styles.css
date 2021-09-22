@@ -13,6 +13,7 @@ a {
   max-width: 2560px;
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -22,6 +23,9 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  color: #000;
+}
 body {
   box-sizing: border-box;
 }
@@ -52,7 +56,7 @@ h1 {
   background-color: #FFF;
   left: 0;
   top: 0;
-  z-index: 10000;
+  z-index: 1;
   animation: loader 3s forwards;
 }
 
@@ -63,17 +67,16 @@ h1 {
   }
   100% {
     opacity: 0;
-    z-index: -10; /* transparent sur la page */
+    z-index: -1;
   }
 }
 .loadercircle {
-  border: 10px solid #F3F3F3;
-  border-top: 10px solid #9356DC;
-  border-bottom: 10px solid #FF79DA;
+  border: 6px solid #9356DC;
+  border-bottom: 6px solid #FF79DA;
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: spin 3s linear forwards;
+  animation: spin 2s linear infinite;
   /*Placement du loader au milieu de la page*/
   margin: auto;
   position: absolute;
@@ -115,6 +118,7 @@ h1 {
 .presentationbook {
   font-weight: bold;
   font-size: 25px;
+  color: #000;
 }
 .presentationexplore {
   padding: 0.75rem 1.5rem;
@@ -144,10 +148,10 @@ h1 {
   font-size: 15px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 15px;
 }
+
 .fonction h2 {
   margin: 0 0 30px 0;
 }
@@ -156,6 +160,7 @@ h1 {
   font-weight: bold;
   background-color: #F6F6F6;
   padding: 30px 50px 30px 18px;
+  margin-top: 40px;
   margin-left: 20px;
   text-align: center;
   border-radius: 20px;
@@ -191,7 +196,7 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 150px;
+  padding: 300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -217,6 +222,7 @@ h1 {
     margin-right: 25px;
   }
 }
+
 
 .restaurantscarte img {
   width: 100%;
@@ -306,6 +312,7 @@ h1 {
 .cartetitle {
   font-family: "Shrikhand", cursive;
   max-width: 322px;
+  color: #000;
 }
 
 .fa-heart:before {
@@ -470,6 +477,19 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
 }
+
+.fonctionchoix {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+
+}
+
+.fonction {
+  
+  display: block;
+  
+}
 @media screen and (max-width: 405px) {
   .carteglobalcontenu:hover .header_menu {
     max-width: 130px;
@@ -538,7 +558,7 @@ h1 {
 
 /*Bouton Commander*/
 .bouton__commander {
-  padding: 30px 0 80px 0;
+  padding: 30px 0 30px 0;
   text-align: center;
   background-color: #F6F6F6;
 }
@@ -622,15 +642,21 @@ footer .footerlogo {
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 500px) {
+  .fonctionchoix {
+    width: 300px;
+  }
+  
 @media screen and (min-width: 600px) and (max-width: 1300px) {
   .carteglobalcontenu {
-    max-width: none;
+    max-width: 350px;
   }
 
 
 .fonctionchoix {
   margin-left: auto;
   margin-right: auto;
+  width: 300px;
 
 }
 
@@ -642,3 +668,4 @@ footer .footerlogo {
 
 }
 
+}
