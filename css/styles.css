@@ -196,7 +196,7 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 300px;
+  padding: 150px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -232,7 +232,7 @@ h1 {
   object-fit: cover;
 }
 .restaurantscarte .restaurantscartecontent {
-  padding: 19px 11px;
+  padding: 10px;
   position: relative;
   display: flex;
 }
